@@ -25,18 +25,15 @@ body {
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
-	background-image: url(../img/bg-body.jpg);
-
+	background: url(../img/bg-body.jpg) no-repeat center center fixed; 
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size: 3vmax;
@@ -58,8 +55,8 @@ body {
 	left: 0;
 	right: 0;
 	margin: auto;
-	width: 50vw;						/* text area width */
-	height: 50vw;                   /* text area height */
+	width: 40vw;						/* text area width */
+	height: 40vw;                   /* text area height */
 }
 
 	
@@ -74,8 +71,8 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    width: 50vw;						/* text area width */
-    height: 50vw;                   /* text area height */                 
+    width: 40vw;						/* text area width */
+    height: 40vw;                   /* text area height */                 
     }
 }
 
