@@ -38,7 +38,7 @@ var app = {
       if (navigator.connection.type == Connection.NONE) {
       navigator.notification.alert('An internet connection is required to continue');
     } else {
-      window.location="http://new.plasticsurgery-india.com";
+      window.location="http://new.plasticsurgery-india.com/";
     }
         app.receivedEvent('deviceready');
     },
