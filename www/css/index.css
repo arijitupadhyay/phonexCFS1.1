@@ -25,11 +25,7 @@ body {
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background-color:#E4E4E4;
-	background: url(../img/bg-body.jpg) no-repeat center center fixed; 
-    -webkit-background-size: 100% 100%; 
-    -moz-background-size: 100% 100%; 
-    -o-background-size: 100% 100%; 
-    background-size: 100% 100%; 
+	background: url(../img/bg-body.jpg); 
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
