@@ -35,9 +35,10 @@ body {
         color-stop(0, #A7A7A7),
         color-stop(0.51, #E4E4E4)
     );
+	background-image: url(../img/bg-body.jpg);
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
+    font-size: 3vmax;
     height:100%;
     margin:0px;
     padding:0px;
@@ -45,40 +46,59 @@ body {
     width:100%;
 }
 
+
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
-    text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+	/* background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+	/* background-size: 100% 100%;*/
+	position: absolute;
+	top:0;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 50vw;						/* text area width */
+	height: 50vw;                   /* text area height */
 }
 
+	
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
+    /* background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+	/* background-size: 100% 100%;*/
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50vw;						/* text area width */
+    height: 50vw;                   /* text area height */                 
     }
 }
 
-h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin:0px;
-    overflow:visible;
-    padding:0px;
+#bottom {
+    position:absolute;	
+    bottom: -50px;
+	right: 0px;
+    margin: 20px;
     text-align:center;
+
 }
 
-.event {
+#bottom h1, a {
+	margin-top:20px;
+	padding-top:20px;
+	font-size:3vmax;
+	font-weight:bolder;
+	margin:0px;
+	padding:0px;
+	text-decoration: none;
+	color: #006;	
+}
+
+#bottom .event {
     border-radius:4px;
     -webkit-border-radius:4px;
     color:#FFFFFF;
@@ -87,12 +107,12 @@ h1 {
     padding:2px 0px;
 }
 
-.event.listening {
+#bottom .event.listening {
     background-color:#333333;
     display:block;
 }
 
-.event.received {
+#bottom .event.received {
     background-color:#4B946A;
     display:none;
 }
