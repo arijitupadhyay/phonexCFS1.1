@@ -36,7 +36,7 @@ body {
         color-stop(0.51, #E4E4E4)
     );
 	background-image: url(../img/bg-body.jpg);
-	background-size: 100% 100%;
+
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size: 3vmax;
