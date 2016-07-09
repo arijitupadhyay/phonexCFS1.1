@@ -42,7 +42,7 @@
         <preference name="phonegap-version"       value="3.5.0" />
     -->
     <preference name="SplashScreen" value="splash" />
-    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenDelay" value="1000" />
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="FadeSplashScreen" value="false" />
     <preference name="SplashMaintainAspectRatio" value="true" />
@@ -97,6 +97,10 @@
     <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
     <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
     <gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+	<gap:splash src="res/screen/android/screen-ldpi-landscape.png"       gap:platform="android" gap:qualifier="land-ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-landscape.png"       gap:platform="android" gap:qualifier="land-mdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi-landscape.png"       gap:platform="android" gap:qualifier="land-hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-landscape.png"      gap:platform="android" gap:qualifier="land-xhdpi" />
     <gap:splash src="res/screen/blackberry/screen-225.png"              gap:platform="blackberry" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
@@ -105,18 +109,6 @@
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" />
 	
-<platform name="android">
-    <!-- you can use any density that exists in the Android project -->
-    <splash src="res/screen/android/screen-hdpi-landscape.png" density="land-hdpi"/>
-    <splash src="res/screen/android/screen-ldpi-landscape.png" density="land-ldpi"/>
-    <splash src="res/screen/android/screen-mdpi-landscape.png" density="land-mdpi"/>
-    <splash src="res/screen/android/screen-xhdpi-landscape.png" density="land-xhdpi"/>
-
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="port-hdpi"/>
-    <splash src="res/screen/android/screen-ldpi-portrait.png" density="port-ldpi"/>
-    <splash src="res/screen/android/screen-mdpi-portrait.png" density="port-mdpi"/>
-    <splash src="res/screen/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
-</platform>	
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>100</string>
@@ -142,7 +134,6 @@
     <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-navigation href="http://*/*" />
     <allow-navigation href="https://*/*" />
-    <allow-navigation href="https://google.com/*" />
     
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
