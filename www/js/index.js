@@ -33,6 +33,13 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+    //window.location.href = "http://phonexCFS.in/";
+    //window.open("http://phonexCFS.in/", "_system");
+      if (navigator.connection.type == Connection.NONE) {
+      navigator.notification.alert('An internet connection is required to continue');
+    } else {
+      window.location="http://new.plasticsurgery-india.com";
+    }
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
