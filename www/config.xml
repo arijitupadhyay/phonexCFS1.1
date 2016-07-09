@@ -139,7 +139,6 @@
     <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-navigation href="http://*/*" />
     <allow-navigation href="https://*/*" />
-    <allow-navigation href="https://google.com/*" />
     
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
