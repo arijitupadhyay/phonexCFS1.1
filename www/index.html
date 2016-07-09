@@ -49,5 +49,20 @@
 				}
 			}
         </script>
+<script type="text/javascript" charset="utf-8">
+
+             document.addEventListener("deviceready", onDeviceReady, true);
+
+             function onDeviceReady()
+             {     
+                   document.addEventListener("backbutton", BackKeyDown, true);
+             }
+
+             function BackKeyDown()
+             {
+                 navigator.notification.alert();
+                 navigator.app.exitApp();  // For Exit Application
+             }
+        </script>        
     </body>
-</html> 
+</html>
