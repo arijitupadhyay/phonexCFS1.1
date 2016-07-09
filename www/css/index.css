@@ -90,7 +90,7 @@ body {
 #bottom h1, a {
 	margin-top:20px;
 	padding-top:20px;
-	font-size:3vmax;
+	font-size:4vmax;
 	font-weight:bolder;
 	margin:0px;
 	padding:0px;
@@ -109,11 +109,13 @@ body {
 
 #bottom .event.listening {
     background-color:#333333;
+	font-size: 3vmax;
     display:block;
 }
 
 #bottom .event.received {
     background-color:#4B946A;
+	font-size: 3vmax;
     display:none;
 }
 
