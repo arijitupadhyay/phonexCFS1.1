@@ -6,10 +6,10 @@
         id        = "com.poligon.phonexCFS"
         version   = "2.0.1">
 
-    <name>IIHM Student</name>
+    <name>phonex CFS</name>
 
     <description>
-        IIHM Student Performance App
+        phonex CFS ERP App
     </description>
 
     <author href="http://poligon.in" email="info@poligononline.com">
