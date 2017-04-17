@@ -5,42 +5,33 @@
 <meta name="format-detection" content="telephone=no" />
 <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 <link rel="stylesheet" type="text/css" href="css/index.css" />
-<title>phonexCFS</title>
+<title>phonex CFS</title>
 </head>
 <body>
-<div id="container">
-  <div class="app"> <a href="#" onClick="ph();"><img src="img/homelogo.png" border="0" width="100%"></a> </div>
-  <div id="deviceready" class="blink">
-    <p class="event listening">Connecting to ERP</p>
-    <p class="event received">Ready to Connect</p>
-  </div>
-</div>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript">
-            app.initialize();
-			function ph() {
-				 if (navigator.connection.type == Connection.NONE) {
-				  navigator.notification.alert('An internet connection is required to continue');
-				} else {
-				  window.location="http://www.phonexcfs.in/";
-				}
-			}
-        </script>
 <script type="text/javascript" charset="utf-8">
 
-             document.addEventListener("deviceready", onDeviceReady, true);
+document.addEventListener("deviceready", onDeviceReady, false);
 
-             function onDeviceReady()
-             {     
-                   document.addEventListener("backbutton", BackKeyDown, true);
-             }
+    function onDeviceReady(){
+        document.addEventListener("backbutton", function(e){
+           if(document.getElementById('#homepage')){
+               e.preventDefault();
+               navigator.app.exitApp();
+           }
+           else {
+               navigator.app.backHistory()
+           }
+        }, false);
+    }
+	onDeviceReady();
 
-             function BackKeyDown()
-             {
-                 //navigator.notification.alert();
-                 navigator.app.exitApp();  // For Exit Application
-             }
-        </script>
+    document.addEventListener('deviceready', function() {
+		navigator.splashscreen.hide();											  
+        var url = 'http://phonexcfs.in/app/' // change to whatever you want
+        cordova.InAppBrowser.open(url, '_self', 'location=no');
+    }, false)
+</script>
 </body>
 </html>
