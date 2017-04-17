@@ -21,9 +21,9 @@
 }
 
 body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-touch-callout: default;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    -webkit-user-select: text;                  /* prevent copy paste, to allow, change 'none' to 'text' */
 
 
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
@@ -56,9 +56,9 @@ background:url(../img/Container-docker.jpg) ;
 	/* background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
 	/* background-size: 100% 100%;*/
 	position: absolute;
-	top:0;
+	top:221px;
 	bottom: 50px;
-	left: 0;
+	left: 48px;
 	right: 0;
 	margin: auto;
 	width: 40vw;						/* text area width */
