@@ -38,6 +38,7 @@
   <allow-intent href="https://*/*" />
   <allow-intent href="mailto:*" />
   <allow-intent href="geo:*" />
+  <allow-intent href="tel:*" />
   <platform name="android">
     <allow-intent href="market:*" />
   </platform>
