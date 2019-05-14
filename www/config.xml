@@ -25,7 +25,8 @@
   <plugin name="cordova-plugin-globalization"/>
   <plugin name="cordova-plugin-inappbrowser"/>
   <plugin name="cordova-plugin-network-information"/>
-  <plugin name="cordova-plugin-statusbar"/>
+  <plugin name="cordova-plugin-statusbar"/>  
+  <plugin name="cordova-plugin-fullscreen"/>
   <plugin name="cordova-plugin-whitelist"/>
   <platform name="android">
   		<icon src="icon.png" />
