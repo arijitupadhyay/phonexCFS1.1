@@ -32,6 +32,11 @@ html, body
              function onDeviceReady()
              {     
                    document.addEventListener("backbutton", BackKeyDown, true);
+				   StatusBar.hide();
+						if (typeof AndroidFullScreen !== 'undefined') {   // Fullscreen plugin exists ?
+						  function errorFunction(error) { console.error(error); }
+						  AndroidFullScreen.isSupported(AndroidFullScreen.immersiveMode, errorFunction);
+						}
              }
 
              function BackKeyDown()
